@@ -8,7 +8,7 @@ while True:
 
     # Plot the points in the walk
     plt.style.use('classic')
-    fig, ax = plt.subplots() # Create a figure containing one single axis
+    fig, ax = plt.subplots(figsize=(15,9)) # Create a figure containing one single axis
     
     point_numbers = range(rw.num_points)
 
