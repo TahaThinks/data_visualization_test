@@ -12,17 +12,18 @@ while True:
     
     point_numbers = range(rw.num_points)
 
-    # ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors = 'none', s=1)
-    
-    # # Emphasize the first points & last points
-    # ax.scatter(rw.x_values[0], rw.y_values[0], c='green', edgecolors = 'none', s=100)
-    # ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors = 'none', s=100)
-    
-    ax.plot(rw.x_values, rw.y_values)
+    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors = 'none', s=5)
     
     # Emphasize the first points & last points
-    ax.plot(rw.x_values[0], rw.y_values[0], c='green', marker='o')
-    ax.plot(rw.x_values[-1], rw.y_values[-1], c='red', marker='o')
+    ax.scatter(rw.x_values[0], rw.y_values[0], c='green', edgecolors = 'none', s=100)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors = 'none', s=100)
+    
+    # For Molecular Motion
+    # ax.plot(rw.x_values, rw.y_values)
+    
+    # # Emphasize the first points & last points
+    # ax.plot(rw.x_values[0], rw.y_values[0], c='green', marker='o')
+    # ax.plot(rw.x_values[-1], rw.y_values[-1], c='red', marker='o')
 
 
 
